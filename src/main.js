@@ -38,7 +38,7 @@ import * as API from '@/api'
 import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload, {
     // 懒加载默认图片
-    loading: 'https://img2.baidu.com/it/u=2667602665,1600550074&fm=253&fmt=auto&app=138&f=GIF?w=480&h=360'
+    loading: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202002%2F15%2F20200215151942_iyvmq.thumb.1000_0.gif&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654336693&t=eda8c80af8e72f7652ac1fb55caa1e92'
 })
 
 // 引入表单校验插件

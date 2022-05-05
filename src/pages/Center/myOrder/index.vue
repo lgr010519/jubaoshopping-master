@@ -22,11 +22,11 @@
         </div>
         <div class="orders">
           <!-- 每一笔订单 -->
-          <table class="order-item" v-for="(order, index) in myOrder.records" :key="order.id">
+          <table class="order-item" v-for="order in myOrder.records" :key="order.id">
             <thead>
               <tr>
                 <th colspan="5">
-                  <span class="ordertitle">{{order.createTime}}　订单编号：{{order.outTradeNo}} <span class="pull-right delete"><img src="../images/delete.png"></span></span>
+                  <span class="ordertitle">{{order.createTime}} 订单编号：{{order.outTradeNo}} <span class="pull-right delete"><img src="../images/delete.png"></span></span>
                 </th>
               </tr>
             </thead>

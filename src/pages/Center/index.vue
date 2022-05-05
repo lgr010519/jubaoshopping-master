@@ -56,8 +56,8 @@
         <!-- 右侧内容 -->
         <!-- 路由组件出口位置 -->
         <router-view></router-view>
-        <!-- <groupOrder />
-                <myOrder /> -->
+        <groupOrder />
+        <myOrder />
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
 import myOrder from './myOrder'
 import groupOrder from './groupOrder'
 export default {
-  name: '',
+  name: 'Center',
   components: {
     myOrder,
     groupOrder

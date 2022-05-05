@@ -43,7 +43,7 @@
           <!-- 销售产品列表 -->
           <div class="goods-list">
             <ul class="yui3-g">
-              <li class="yui3-u-1-5" v-for="(good,index) in goodsList" :key="good.id">
+              <li class="yui3-u-1-5" v-for="good in goodsList" :key="good.id">
                 <div class="list-wrap">
                   <div class="p-img">
                     <router-link :to="`/detail/${good.id}`"><img v-lazy="good.defaultImg" /></router-link>
@@ -202,7 +202,6 @@ export default {
     // 排序的操作
     changeOrder(flag) {
       // flag形参，是一个标记，代表用户点击的是综合还是价格
-      let originOrder = this.searchParams.order
       // 获取的是最开始的状态
       let originFlag = this.searchParams.order.split(':')[0]
       let originSort = this.searchParams.order.split(':')[1]
