@@ -113,7 +113,7 @@ export default {
     async open() {
       // 生成二维码（地址）
       let url = await QRCode.toDataURL(this.payInfo.codeUrl)
-      this.$alert(`<img src=${url}} />`, '请你微信支付', {
+      this.$alert(`<img src=${url} />`, '请你微信支付', {
         dangerouslyUseHTMLString: true,
         center: true,
         showCancelButton: true,
